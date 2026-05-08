@@ -1,7 +1,4 @@
 import { getAllProducts } from './app/actions/salesforce';
-import dotenv from 'dotenv';
-dotenv.config({ path: '.env.local' });
-
 async function test() {
   const products = await getAllProducts();
   console.log('Products count:', products.length);
