@@ -32,10 +32,15 @@ function Navbar() {
             )}
           </Link>
           <Link 
-            href="#" 
-            className="text-gray-300 hover:text-white text-[13px] font-semibold transition-colors py-1"
+            href="/products" 
+            className={`text-[13px] font-semibold transition-colors relative py-1 ${
+              pathname?.startsWith("/products") ? "text-white" : "text-gray-300 hover:text-white"
+            }`}
           >
             Products
+            {pathname?.startsWith("/products") && (
+              <span className="absolute bottom-[-14px] left-0 right-0 h-[2.5px] bg-[#F97316] rounded-full mx-auto" />
+            )}
           </Link>
           <Link 
             href="/support" 
@@ -49,10 +54,15 @@ function Navbar() {
             )}
           </Link>
           <Link 
-            href="#" 
-            className="text-gray-300 hover:text-white text-[13px] font-semibold transition-colors py-1"
+            href="/knowledge-base" 
+            className={`text-[13px] font-semibold transition-colors relative py-1 ${
+              pathname?.startsWith("/knowledge-base") ? "text-white" : "text-gray-300 hover:text-white"
+            }`}
           >
             Knowledge Base
+            {pathname?.startsWith("/knowledge-base") && (
+              <span className="absolute bottom-[-14px] left-0 right-0 h-[2.5px] bg-[#F97316] rounded-full mx-auto" />
+            )}
           </Link>
         </nav>
 

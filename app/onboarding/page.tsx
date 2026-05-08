@@ -132,23 +132,12 @@ export default function OnboardingPage() {
           
           {/* Left Column: Compact Illustration aligned with form top */}
           <div className="flex flex-col items-center justify-start pt-[12px]">
-            <div className="relative w-[180px] h-[180px] rounded-full bg-[#FDF0EB] flex items-center justify-center shadow-sm">
-              <svg viewBox="0 0 200 200" className="w-[90px] h-auto drop-shadow-sm">
-                <rect x="40" y="50" width="60" height="110" rx="4" fill="#071B34" />
-                <rect x="104" y="80" width="46" height="80" rx="4" fill="#071B34" />
-                
-                <rect x="52" y="65" width="12" height="16" rx="2" fill="white" />
-                <rect x="76" y="65" width="12" height="16" rx="2" fill="white" />
-                <rect x="52" y="93" width="12" height="16" rx="2" fill="white" />
-                <rect x="76" y="93" width="12" height="16" rx="2" fill="white" />
-                <rect x="52" y="121" width="12" height="16" rx="2" fill="white" />
-                <rect x="76" y="121" width="12" height="16" rx="2" fill="white" />
-
-                <rect x="114" y="95" width="10" height="14" rx="2" fill="white" />
-                <rect x="130" y="95" width="10" height="14" rx="2" fill="white" />
-                <rect x="114" y="120" width="10" height="14" rx="2" fill="white" />
-                <rect x="130" y="120" width="10" height="14" rx="2" fill="white" />
-              </svg>
+            <div className="relative w-[180px] h-[180px] rounded-full bg-[#FDF0EB] flex items-center justify-center shadow-sm overflow-hidden border-[4px] border-white">
+              <img 
+                src="/dealer-onboarding.png" 
+                alt="Dealer Onboarding" 
+                className="w-full h-full object-cover"
+              />
             </div>
             <div className="text-center mt-[16px]">
               <h3 className="text-[#071B34] text-[15px] font-bold">ABC Equipment Partner Portal</h3>

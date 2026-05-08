@@ -177,39 +177,15 @@ export default function SupportPage() {
             </form>
           </div>
 
-          {/* Right Column: Illustration */}
           <div className="flex justify-center items-center">
-            <svg viewBox="0 0 440 380" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-[280px] h-auto">
-              {/* Soft Peach Organic Blob */}
-              <path d="M100,160 C100,80 180,60 260,110 C340,160 360,240 300,290 C240,340 140,330 100,280 C60,230 100,240 100,160 Z" fill="#FDF0EB" />
-              
-              {/* Small Peach circle top-right */}
-              <circle cx="330" cy="130" r="15" fill="#FBE3D8" />
-
-              {/* Headset shadow */}
-              <ellipse cx="210" cy="295" rx="60" ry="8" fill="#EAD5CB" opacity="0.4" />
-
-              {/* Headset Band */}
-              <path d="M150,185 C150,115 190,95 230,95 C270,95 310,115 310,185" stroke="#071B34" strokeWidth="14" strokeLinecap="round" fill="none" />
-              
-              {/* Left Ear Cup */}
-              <rect x="138" y="170" width="24" height="50" rx="12" fill="#071B34" />
-              {/* Right Ear Cup */}
-              <rect x="298" y="170" width="24" height="50" rx="12" fill="#071B34" />
-              
-              {/* Mic arm */}
-              <path d="M305,205 C305,250 260,260 235,250" stroke="#071B34" strokeWidth="8" strokeLinecap="round" fill="none" />
-              <rect x="222" y="243" width="16" height="12" rx="4" fill="#071B34" />
-
-              {/* Orange Chat Bubble on the right */}
-              <g transform="translate(325, 155)">
-                {/* Unified chat bubble body and tail pointing down-left */}
-                <path d="M35,0 C54,0 70,11 70,25 C70,39 54,50 35,50 C31,50 27,49 23,48 L5,55 L11,39 C4,35 0,30 0,25 C0,11 16,0 35,0 Z" fill="#F97316" />
-                <circle cx="23" cy="25" r="4" fill="white" />
-                <circle cx="35" cy="25" r="4" fill="white" />
-                <circle cx="47" cy="25" r="4" fill="white" />
-              </g>
-            </svg>
+            <div className="relative w-[300px] h-[300px] rounded-2xl overflow-hidden shadow-xl border-[6px] border-white rotate-3 hover:rotate-0 transition-transform duration-500">
+              <img 
+                src="/support-agent.png" 
+                alt="Support Agent" 
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+            </div>
           </div>
 
         </div>

@@ -9,8 +9,8 @@ export default function HomePage() {
         {/* Unified Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/hero-unified.png"
-            alt="ABC Equipment Loader in Mining Environment"
+            src="/home-heavy.png"
+            alt="Heavy Construction Equipment in Industrial Site"
             fill
             className="object-cover object-[center_right]"
             priority
@@ -34,7 +34,7 @@ export default function HomePage() {
               <Link href="/onboarding" className="bg-[#F97316] text-white h-[46px] px-6 rounded-[6px] font-bold text-[14px] flex items-center justify-center hover:bg-[#EA580C] transition-colors">
                 Register as Dealer
               </Link>
-              <Link href="#" className="bg-transparent border-[2px] border-white text-white h-[46px] px-6 rounded-[6px] font-bold text-[14px] flex items-center justify-center hover:bg-white/10 transition-colors">
+              <Link href="/products" className="bg-transparent border-[2px] border-white text-white h-[46px] px-6 rounded-[6px] font-bold text-[14px] flex items-center justify-center hover:bg-white/10 transition-colors">
                 Browse Products
               </Link>
             </div>
@@ -87,7 +87,7 @@ export default function HomePage() {
             </Link>
 
             {/* Card 3 */}
-            <Link href="#" className="bg-white rounded-[10px] border border-[#E5E7EB] p-[24px] flex flex-col hover:shadow-md transition-shadow group relative min-h-[180px]">
+            <Link href="/knowledge-base" className="bg-white rounded-[10px] border border-[#E5E7EB] p-[24px] flex flex-col hover:shadow-md transition-shadow group relative min-h-[180px]">
               <div className="mb-[16px]">
                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0B1F3A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
